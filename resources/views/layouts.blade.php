@@ -10,10 +10,22 @@
   <link rel="stylesheet" href="{{url ('/asset/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{url ('/asset/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{url ('/asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{url ('/asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+  
+  <!-- Select2 -->
+  <link rel="stylesheet" href="{{url ('/asset/plugins/select2/css/select2.min.css') }}">
+  <link rel="stylesheet" href="{{url ('/asset/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="{{url ('/asset/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
   <!-- iCheck -->
   <link rel="stylesheet" href="{{url ('/asset/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+
   <!-- JQVMap -->
   <link rel="stylesheet" href="{{url ('/asset/plugins/jqvmap/jqvmap.min.css') }}">
   <!-- Theme style -->
@@ -24,6 +36,9 @@
   <link rel="stylesheet" href="{{url ('/asset/plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{url ('/asset/plugins/summernote/summernote-bs4.min.css') }}">
+
+  
+
 
   <link rel="stylesheet" href="{{url ('/css/app.css') }}">
   <!-- <link rel="stylesheet" href="{{ mix('css/app.css') }}"> -->
@@ -215,19 +230,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="{{url('/user-roles')}}" class="nav-link">
                   <i class="nav-icon fas fa-user-cog text-purple"></i>
                   <p>User Roles</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="{{url('/users')}}" class="nav-link">
+                  <i class="nav-icon fas fa-users text-pink"></i>
+                  <p>User</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/customer')}}" class="nav-link">
                   <i class="nav-icon fas fa-user-friends text-yellow"></i>
                   <p>Customers</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
+                <a href="{{url('/supplier')}}" class="nav-link">
                   <i class="nav-icon fas fa-male text-yellow"></i>
                   <p>Suppliers</p>
                 </a>
@@ -244,62 +265,62 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="{{url('/warehouse')}}" class="nav-link">
                   <i class="nav-icon fas fa-warehouse text-red"></i>
                   <p>Warehouse</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
+                <a href="{{url('/stock')}}" class="nav-link">
                   <i class="nav-icon fas fa-layer-group text-pink"></i>
                   <p>Stock Entry</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
+                <a href="{{url('/transfer')}}" class="nav-link">
                   <i class="nav-icon fas fa-random text-yellow"></i>
                   <p>Transfer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
+                <a href="{{url('/product-category')}}" class="nav-link">
                   <i class="nav-icon fas fa-shapes text-blue"></i>
                   <p>Product Category</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
+                <a href="{{url('/product')}}" class="nav-link">
                   <i class="nav-icon fas fa-dice-d20 text-green"></i>
                   <p>Products</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
+                <a href="{{url('/purchase')}}" class="nav-link">
                   <i class="nav-icon fas fa-shopping-bag text-yellow"></i>
                   <p>Purchase</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
+                <a href="{{url('/purchase-return')}}" class="nav-link">
                   <i class="nav-icon fas fa-reply text-yellow"></i>
                   <p>Purchase return</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
+                <a href="{{url('/sale')}}" class="nav-link">
                   <i class="nav-icon fas fa-store text-red"></i>
                   <p>Sales</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
+                <a href="{{url('/sales-return')}}" class="nav-link">
                   <i class="nav-icon fas fa-reply text-red"></i>
                   <p>Sales return</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
+                <a href="{{url('/quotation')}}" class="nav-link">
                   <i class="nav-icon fas fa-file-invoice-dollar text-green"></i>
                   <p>Quotation</p>
                 </a>
@@ -308,7 +329,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{url('/bank-account')}}" class="nav-link">
+            <a href="{{url('/expense')}}" class="nav-link">
               <i class="nav-icon fab fa-codepen text-green"></i>
               <p>
                 Expenses
@@ -326,434 +347,91 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
+                <a href="{{url('/report/gstr1')}}" class="nav-link">
+                  <i class="nav-icon fas fa-truck text-yellow"></i>
+                  <p>GSTR1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
+                <a href="{{url('/report/gstr2')}}" class="nav-link">
+                  <i class="nav-icon fas fa-truck-loading text-violet"></i>
+                  <p>GSTR2</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                <a href="{{url('/report/sale')}}" class="nav-link">
+                  <i class="nav-icon fas fa-book-open text-yellow"></i>
+                  <p>Sales</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
+                <a href="{{url('/report/sales-return')}}" class="nav-link">
+                  <i class="nav-icon fas fa-reply text-yellow"></i>
+                  <p>Sales return</p>
                 </a>
               </li>
+
+              <li class="nav-item">
+                <a href="{{url('/report/expense')}}" class="nav-link">
+                  <i class="nav-icon fab fa-readme text-red"></i>
+                  <p>Expenses</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/report/ledger')}}" class="nav-link">
+                  <i class="nav-icon fas fa-search-dollar text-orange"></i>
+                  <p>Ledger</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/report/profit-and-loss')}}" class="nav-link">
+                  <i class="nav-icon fas fa-hand-holding-usd text-teal"></i>
+                  <p>Profit & Loss</p>
+                </a>
+              </li>
+              
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas fa-user-cog text-blue"></i>
               <p>
-                Tables
+                Settings
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                <a href="{{url('/settings')}}" class="nav-link">
+                  <i class="nav-icon fas fa-cogs text-pink"></i>
+                  <p>Company Settings</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
+                <a href="{{url('/expense-category')}}" class="nav-link">
+                  <i class="nav-icon fas fa-receipt text-yellow"></i>
+                  <p>Expense category</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
+                <a href="{{url('/tax')}}" class="nav-link">
+                  <i class="nav-icon fas fa-file-invoice text-green"></i>
+                  <p>Tax</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/discount')}}" class="nav-link">
+                  <i class="nav-icon fas fa-percent text-red"></i>
+                  <p>Discounts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/currency')}}" class="nav-link">
+                  <i class="nav-icon fab fa-ethereum text-green"></i>
+                  <p>Currency</p>
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Kanban Board
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Add</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Detail</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contacts.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contacts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/faq.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>FAQ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Extras
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v1
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v1</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v2
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v2</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Legacy User Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/language-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Language Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/404.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/500.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/pace.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pace</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/blank.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="starter.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Starter Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-search"></i>
-              <p>
-                Search
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/search/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Search</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/search/enhanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Enhanced</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="iframe.html" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>Tabbed IFrame Plugin</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
-            </a>
-          </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle"></i>
-              <p>
-                Level 1
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Level 2
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
-            </a>
           </li>
         </ul>
       </nav>
@@ -797,6 +475,8 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{url ('/asset/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+<script src="{{url ('/asset/plugins/select2/js/select2.full.min.js') }}"></script>
 <!-- ChartJS -->
 <script src="{{url ('/asset/plugins/chart.js/Chart.min.js') }}"></script>
 <!-- Sparkline -->
@@ -817,10 +497,26 @@
 <script src="{{url ('/asset/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{url ('/asset/dist/js/adminlte.js') }}"></script>
+
+
+<!-- DataTables  & Plugins -->
+<script src="{{url ('/asset/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/jszip/jszip.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/pdfmake/pdfmake.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/pdfmake/vfs_fonts.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+<script src="{{url ('/asset/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{url ('/asset/dist/js/pages/dashboard.js') }}"></script>
 
 <script src="{{url ('/js/app.js') }}"></script>
+<script src="{{url ('/js/custom.js') }}"></script>
 <!-- <script src="{{ mix('js/app.js') }}"></script> -->
 </body>
 </html>

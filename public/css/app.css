@@ -1,1 +1,21 @@
 
+tbody td {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+}
+
+
+
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+    display: flex !important;
+    margin: 5px;
+    align-items: baseline;
+}
